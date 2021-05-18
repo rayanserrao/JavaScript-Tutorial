@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var Dog = {
+        "name":"rubi",
+        "legs":4,
+        "tail":1,
+        "friends":["evry"]
+    };
+    var dogname = Dog.name;
+    console.log(dogname);
+
+    Dog.name = 'tiger';
+    console.log(Dog.name);
+
+    Dog.sound = 'Bow bow';
+    console.log(Dog.sound);
+
+    console.log(Dog.hasOwnProperty('so'));
+
+
+    var Maps ={
+        'car':{
+            'inside':{
+                'ma':'ar',
+                'ah ah':['hello']
+            },
+
+            'outside':{
+                'jack':'aroma'
+            }
+        }
+    };
+
+    console.log(Maps.car.inside['ah ah']);
+
+
+
+    var myobj ={
+        'name':'rayan',
+        'age':25,
+        'area':'mangalore',
+        'intrest':['javascript','Python','AI','ML']
+    };
+
+    console.log(myobj.hasOwnProperty('hello'));
+
+    
+
+</script>
+    
+</body>
+</html>

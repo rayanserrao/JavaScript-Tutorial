@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        function fun(a,b){
+            return a>b ? "correct True":"Not true";
+        }
+        console.log(fun(3,4));
+
+        function func(num){
+            return num>0 ? "Positive": num<0 ? "negetive" : "Zero";
+        }
+        console.log(func(-0));
+
+        const s = [1,2,3];
+        function kt(){
+
+            "use strict"
+            s[0] = 3;
+            s[1] = 5;
+            s[2] = 7;
+            s[3] = 9;
+
+
+            return s;
+
+        }
+        console.log(kt());
+
+    </script>
+    
+</body>
+</html>

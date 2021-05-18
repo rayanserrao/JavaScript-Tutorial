@@ -18,5 +18,24 @@
 
     console.log(func());
     console.log(outer);
+
+    function fun(a,b){
+        return a<b;
+    }
+
+    console.log(fun(8,6))
+
+
+    function fun1(a,b){
+
+        if(a<0 || b<0){
+            return undefined
+        }
+
+        return a+b
+
+    }
+
+    console.log(fun1(5,-2));
     </script>
 </html>
