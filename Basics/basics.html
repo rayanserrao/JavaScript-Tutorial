@@ -125,5 +125,32 @@
 
     console.log(vari.split(' '))
 
+    arr = ['a','b','c','d','e'];
+    console.log(arr.unshift('p'));
+    console.log(arr);
+
+    console.log(arr.splice(2,2,'ele'));
+    console.log(arr);
+
+
+ arr1 = [1,2,3];
+    arr1.forEach(function(item, index)
+    {
+        console.log(item, index);
+    } );
+
+    const doubled = arr1.map(function(item){
+        return item * 2;
+    });
+    console.log(doubled);
+    console.log(arr1);
+
+    const even = arr1.filter(function(item){
+        return item % 2 == 0;
+    });
+    console.log(even);
+    console.log(arr1);
+
+
 </script>
 </html>
