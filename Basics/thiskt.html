@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        function add(c,d){
+            return this.a + this.b + c + d;
+            }
+
+        var o = {'a':1, 'b':2};
+        console.log(add.call(o,5,6));
+        console.log(add.apply(o,[5,6]));
+
+        var myjosn = {
+            'name':'Ryaan',
+            'age':20,
+        'place':"mangalore"    
+        }
+
+        var stringy = JSON.stringify(myjosn);
+        console.log(stringy);
+
+        var parsed = JSON.parse(stringy);
+        console.log(parsed);
+    </script>
+
+
+</body>
+</html>

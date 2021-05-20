@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let reg = /raya/;
+        // let reg = /raya/g;
+        // reg = /raya/i;
+        console.log(reg);
+
+        console.log(reg.source);
+
+
+        s = "i am good boy adn my name is rayan andd rayan is good";
+        let result = reg.exec(s);
+        console.log(result);
+        result = reg.exec(s);
+        console.log(result);
+        result = reg.exec(s);
+        console.log(result);
+
+
+        let res = reg.test(s);
+        console.log(res);
+
+        let res2 = s.match(reg);
+        console.log(res2);
+
+        console.log(s.search(reg));
+    </script>
+    
+</body>
+</html>
