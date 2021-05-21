@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function genralcar(cname, cspeed){
+            this.name = cname;
+            this.speed = cspeed;
+            this.run = function(){
+                console.log(`${this.name} is running`);
+            }
+            this.analyze = function(){
+                console.log(`${this.name} is slower than mercedes by ${300-this.speed} km/h. `)
+            }
+        }
+
+        car1 = new genralcar('nissan',200);
+        car2 = new genralcar('maruthi',300);
+
+        // console.log(car1);
+
+
+
+        //the bello is objevt litterls
+
+        let car = {
+            name:'maruthi 800',
+            speed:80,
+            run:function(){
+                console.log("happy driving");
+            }
+        }
+
+        // console.log(car);
+
+        const prto = {
+            slogan:function(){
+                return "this company is good";
+            },
+
+            chnagename:function(name){
+                this.name = name;
+            }
+        }
+
+        const obj = Object.create(prto);
+        obj.name = "rayan";
+        obj.role = "Junior data sceintist";
+        obj.chnagename("rayan1");
+        console.log(obj);
+
+
+
+    </script>
+    
+</body>
+</html>

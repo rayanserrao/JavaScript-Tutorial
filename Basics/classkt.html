@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        console.log("class kt")
+        class Employee {
+            constructor(name,exp,div){
+                this.name = name;
+                this.exp = exp;
+                this.div = div;
+            }
+
+            slogan(){
+                return ` i am ${this.name} belongs to this`
+            }
+
+            static add(a,b){
+                return a + b;
+            }
+
+        }
+
+        obj1 = new Employee('rayan',3,'ML');
+        console.log(obj1);
+
+
+        class Programmer extends Employee{
+            constructor(name,exp,div,lang){
+                super(name,exp,div);
+                this.lang = lang;
+            }
+
+            details(){
+                if (this.lang == 'Python'){
+                    return 'Python'
+                }
+                else{
+                    return "javscript"
+                }
+            }
+        }
+
+        obj2 = new Programmer('be',4,'AI','python');
+        console.log(obj2);
+    </script>
+    
+</body>
+</html>
